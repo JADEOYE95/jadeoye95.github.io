@@ -132,3 +132,49 @@
 .product-rating {
     color: gold;
 }
+
+/* Footer styles */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: rgb(64, 64, 187);
+    color: white;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-column h3 {
+    font-size: 1.2em;
+    color: #f5c94e; /* Yellowish color for headers */
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
