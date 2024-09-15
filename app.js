@@ -1,4 +1,3 @@
-// Sample product data with hair care products
 const products = [
     { 
         name: "Moisturizing Shampoo", 
@@ -37,10 +36,10 @@ const products = [
         image: "https://via.placeholder.com/150"
     }
 ]
-// Function to display products in a grid
+
 function displayProducts(productList) {
     const productContainer = document.getElementById('products');
-    productContainer.innerHTML = ''; // Clear current product list
+    productContainer.innerHTML = ''; 
 
     productList.forEach(product => {
         const productDiv = document.createElement('div');
@@ -55,10 +54,10 @@ function displayProducts(productList) {
     });
 }
 
-// Initial display of products
+
 displayProducts(products);
 
-// Function to sort products
+
 function sortProducts(criteria) {
     let sortedProducts = [...products];
 
